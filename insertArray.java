@@ -9,7 +9,11 @@ class Insert
         System.out.print("Enter length of an array:");
         len = sc.nextInt();
         int arr[] = new int[len+1];
-       
+        System.out.println("Enter "+len+" elements:");
+        for(int i = 0; i < len; i++)
+        {
+            arr[i] = sc.nextInt();
+        }
         System.out.print("Enter the element which you want to insert:");
         ele = sc.nextInt();
         arr[len] = ele;
